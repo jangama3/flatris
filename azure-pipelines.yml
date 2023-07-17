@@ -20,5 +20,6 @@ steps:
 
 - script: |
     npm install
+    env-cmd -f .env gatsby build
     npm run build
   displayName: 'npm install and build'
